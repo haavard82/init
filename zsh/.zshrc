@@ -1,5 +1,5 @@
 # Aliases File
-source $ZDOTDIR/zshaliases
+#source $ZDOTDIR/zshaliases
 
 # Zsh Options
 # Add the folder path in your fpath
@@ -26,3 +26,6 @@ setopt hist_find_no_dups  # Avoid showing duplicates in history search
 # Share history across all terminal sessions
 setopt share_history
 setopt inc_append_history  # Append to the history file immediately
+
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
